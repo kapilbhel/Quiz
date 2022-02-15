@@ -1,0 +1,41 @@
+.container{
+    max-width:1200px;
+    margin: 5rem auto;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.answers{
+    display: grid;
+    text-align: left;
+    color:purple;
+   
+    grid-template-columns: repeat(2, 1fr);
+
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        border: purple solid;
+        padding: 1rem;
+        margin: 2rem 1rem 0;
+        font-size: 30px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.btn{
+    color:blue;
+    text-decoration:none;
+    padding:5px 10px;
+    border-radius:3px;
+    font-family: 'Poiret One', cursive;
+    font-size:2em;
+    cursor: pointer;
+    border: blue solid;
+}
